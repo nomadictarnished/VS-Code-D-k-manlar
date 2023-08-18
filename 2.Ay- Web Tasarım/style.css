@@ -1,12 +1,123 @@
 body {
     font-family: Arial, sans-serif; /* Yazı tipi ailesi */
-    font-size: 40px; /* <p></p> etiketindeki ana yazının boyutu */
-    background-color: #000000; /* Web sayfasının arka plan rengi */
+    font-size: 30px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: #ffffff; /* Web sayfasının arka plan rengi */
     color: #78785c; /* Metin rengi */
+    
+    
+     
+    
 }
 
 h1 {
     color: #0e8da9; /* Başlık rengi */
     font-size: 24px; /* Başlık yazı tipi boyutu */
     font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+    text-align: center;
+    
 }
+.image1{
+    position: absolute;
+    left: 0px;
+    top: 500px;
+    animation: movement 3s step-end infinite ;
+}
+
+.yazı{
+    
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    word-wrap:break-word;
+    font-size: 30px;
+    width: 600px;
+    left: 450px;
+    
+    
+}
+.witcher{
+    animation: movement2 3s step-end infinite;
+    left: 400px;
+}
+
+@keyframes color-change{
+    0% {
+        color: blue;
+        
+    }   
+
+    10% {
+        color: rgb(0, 62, 231);
+        
+    }
+
+    20% {
+        color: rgb(0, 106, 255);
+        
+    }
+    30% {
+        color: rgb(0, 136, 255);
+        
+    }
+    40%{
+        color: rgb(0, 238, 255);
+    }
+    50% {
+        color: rgb(0, 255, 213);
+    }
+    60% {
+        color: rgb(0, 255, 132);
+    }
+    70% {
+        color: rgb(0, 255, 21);
+    }
+    80% {
+        color: rgb(132, 255, 0);
+    }
+    90% {
+        color: rgb(225, 255, 0);
+    }
+    100% {
+        color: rgb(255, 149, 0);
+    }
+   
+}    
+@keyframes movement {
+10%{
+    left: 0px;
+    top: 50px;   
+}
+50%{
+    top:250px ;
+    left: 0px;
+}
+100%{
+   top: 500;
+   left: 0px;  
+}
+}
+@keyframes movement2 {
+10%{
+    left: 500px;
+    top: 50px;   
+}
+50%{
+    top:250px ;
+    left: 500px;
+}
+100%{
+    top: 500;
+    left: 500px;  
+}
+}
+
+h1{
+    animation: color-change 3s infinite;
+}
+iframe{
+    position: relative;
+    left: 1100px ;
+}
+
+
+    
